@@ -12,8 +12,10 @@ class VideoLinks(models.Model):
     
     @api.multi
     def watch_this_video(self):
+        #embed normal video url 
+        url = self.url.replace("watch?v=", "embed/")  
         
-        iframe = "<iframe width='560' height='315' src='%s' frameborder='0' allowfullscreen></iframe>"%(self.url)
+        iframe = "<iframe width='560' height='315' src='%s' frameborder='0' allowfullscreen></iframe>"%(url)
         
         return {
                 'name' : "Watch Video",
