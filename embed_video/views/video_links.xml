@@ -1,0 +1,47 @@
+<odoo>
+	
+	<record id="video_link_tree" model="ir.ui.view">
+		<field name="name">video.links.tree</field>
+		<field name="model">video.links</field>
+		 <field name="arch" type="xml">
+		 	<tree string="Video Links">
+		 		<field name="name"/>
+		 		<field name="url"/>
+		 		<button name="watch this_video" string="Watch Video" type="object" class="btn-primary"/>
+		 	</tree>
+		 </field>
+	</record>
+	
+	<record id="video_link_form" model="ir.ui.view">
+		<field name="name">video.links.form</field>
+		<field name="model">video.links</field>
+		 <field name="arch" type="xml">
+		 	<form string="Video Links">
+		 		
+		 		<header>
+		 			<button name="watch_this_video" string="Watch Video" type="object" class="btn-primary"/>
+		 		</header>
+		 		<sheet>
+			 		<group>
+			 			<group>
+			 				<field name="name"/>
+			 				<field name="url" widget="url"/>
+			 			</group>
+			 		</group>
+		 		</sheet>
+		 		
+		 	</form>
+		 </field>
+	</record>
+	
+	 <record id="action_video_link" model="ir.actions.act_window">
+	     <field name="name">Video Links</field>
+	     <field name="type">ir.actions.act_window</field>
+	     <field name="res_model">video.links</field>
+	     <field name="view_type">form</field>
+	     <field name="view_mode">tree,form</field>
+	</record>
+	
+	<menuitem id="menu_video_links" name="Video Links" action="action_video_link"/>
+	
+</odoo>
