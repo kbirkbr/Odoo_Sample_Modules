@@ -7,7 +7,7 @@
 		 	<tree string="Video Links">
 		 		<field name="name"/>
 		 		<field name="url"/>
-		 		<button name="watch this_video" string="Watch Video" type="object" class="btn-primary"/>
+		 		<button name="watch_this_video" string="Watch Video" type="object" class="btn-primary"/>
 		 	</tree>
 		 </field>
 	</record>
