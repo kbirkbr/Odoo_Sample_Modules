@@ -7,7 +7,7 @@
     
     'category': 'Other',
     'summary': 'Embed Videos',
-    'description': """this module embed video in form with given video url
+    'description': """this module embed youtube video within odoo form with given video url
 """,
     'depends': ['base'],
     'data': [
