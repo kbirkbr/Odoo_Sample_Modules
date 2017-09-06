@@ -11,7 +11,7 @@
 """,
     'depends': ['base'],
     'data': [
-			'data/data.xml',
+	    'data/data.xml',
             'views/video_links.xml',
             'wizard/watch_video_view.xml',
         
