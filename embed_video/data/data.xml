@@ -1,0 +1,8 @@
+<odoo>
+	
+	<record id="video_link_data" model="video.links">
+		<field name="name">Zakir Khan</field>
+		<field name="url">https://www.youtube.com/embed/7V6FGF1ffgQ</field>
+	</record>
+
+</odoo>
